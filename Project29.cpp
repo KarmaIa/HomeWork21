@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <fstream>
+#include <cmath>
 using namespace std;
 
 //Задание 1. Определить существует ли треугольник. Если существует определить
@@ -94,17 +95,25 @@ int main()
     srand(time(0));
 
     //Задание 1
-    /*int a = 60;
-    int b = 60;
-    int c = 60;
+    int a = 60;
+    int b = 100;
+    int c = 55;
     if (a + b > c && a + c > b && b + c > a)
     {
         cout << "Треугольник существует" << endl;
+        if ((pow(a, 2) < pow(b, 2) + pow(c, 2)) || (pow(b, 2) + pow(c, 2) == pow(a, 2)) || (pow(a, 2) > pow(b, 2) + pow(c, 2)))
+        {
+            cout << "Треугольник прямоугольный" << endl;
+        }
+        else 
+        {
+            cout << "Треугольник не прямоугольный" << endl;
+        }
     }
     else
     {
         cout << "Треугольник не существует" << endl;
-    }*/
+    }
 
     //Задание 2
     /*int sum = 0;
@@ -151,7 +160,7 @@ int main()
     WriteToNewFile("NewFile.txt", str, countSymbol);*/
     
     //Задание 5.
-    int row = 4;
+    /*int row = 4;
     int col = 4;
     int **array = new int* [row];
     for (int i = 0; i < row; i++)
@@ -165,5 +174,5 @@ int main()
     cout << "После удаления столбца:" << endl;
     removeColInTwoDimensionalArray(array, col, row, 2);
     printTwoDimensionalArray(array, col, row);
-    delete[] array;
+    delete[] array;*/
 }
